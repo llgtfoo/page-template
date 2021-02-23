@@ -71,12 +71,12 @@ export default {
         // },
         on: {
           // 事件
-          click: (event) => {
+          click: event => {
             console.log(event, 'event')
             this.$emit('on-click', record)
           }, // 点击行
           // eslint-disable-next-line no-unused-vars
-          dblclick: (event) => {
+          dblclick: event => {
             this.$emit('on-dblclick', record)
           },
         },
@@ -119,9 +119,8 @@ export default {
         tableLayout: 'fixed',
         scroll: this.scroll,
         pagination: false,
-        rowKey: (record) => record.key,
-        // eslint-disable-next-line no-unused-vars
-        customHeaderRow: (column) => {
+        rowKey: record => record.key,
+        customHeaderRow: () => {
           return {
             style: {
               height: '65px',
@@ -137,7 +136,7 @@ export default {
       },
     }
     // slots循环
-    const slots = Object.keys(this.$slots).map((slot) => {
+    const slots = Object.keys(this.$slots).map(slot => {
       return <template slot={slot}>{this.$slots[slot]}</template>
     })
     //表格元素
@@ -159,7 +158,7 @@ export default {
         defaultPageSize: this.pageSize,
         pageSize: this.currentPageSize,
         pageSizeOptions: this.pageSizeOptions,
-        showTotal: (total) => {
+        showTotal: total => {
           return `共   ${total}    条`
         },
       },

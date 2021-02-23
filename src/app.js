@@ -21,9 +21,9 @@ Vue.use(utils)//全局工具函数
 // Vue.use(Http)//this.http
 sync(store, router)//route和store结合
 
-import Antd from 'ant-design-vue';
-import 'ant-design-vue/dist/antd.css';
-Vue.use(Antd);//ui框架
+import Antd from 'ant-design-vue'
+import 'ant-design-vue/dist/antd.css'
+Vue.use(Antd)//ui框架
 
 import Fragment from 'vue-fragment'
 Vue.use(Fragment.Plugin)//跟元素
@@ -32,8 +32,12 @@ Vue.prototype.http = http
 Vue.prototype.echarts = echarts
 Vue.use(views, router, store)
 
+// import ViewUI from 'view-design'
+// import 'view-design/dist/styles/iview.css'
+// Vue.use(ViewUI)
+
 import '@/assets/css/init.css'//默认css
-import '@/assets/css/scroll.scss'//默认滚动条css
+import '@/assets/css/scroll.scss'//默认css
 Vue.config.productionTip = false
 export default new Vue({
   router,

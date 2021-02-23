@@ -1,11 +1,11 @@
 <template>
 <div class="loading-warp">
   <div class="loading">
-    <div class="dot"></div>
-    <div class="dot"></div>
-    <div class="dot"></div>
-    <div class="dot"></div>
-    <div class="dot"></div>
+    <div class="dot" />
+    <div class="dot" />
+    <div class="dot" />
+    <div class="dot" />
+    <div class="dot" />
     </div>
   </div>
   </div>

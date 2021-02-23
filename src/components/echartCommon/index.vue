@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import doAnimation from '@/utils/doAnimation.js'
+import doAnimation from '@/utils/doAnimation.js';
 export default {
   name: 'EchartCommon',
   props: {

@@ -1,8 +1,8 @@
 <template>
   <a-config-provider :locale="locale">
     <div class="wrapper">
-      <keep-alive :include="['Layout']">
-       <router-view></router-view>
+      <keep-alive :include="['Layout', 'SideMenu']">
+        <router-view></router-view>
       </keep-alive>
     </div>
   </a-config-provider>
@@ -16,7 +16,9 @@ export default {
       locale: zhCN,
     }
   },
+  watch: {},
   mounted() {},
+  created() {},
 }
 </script>
 

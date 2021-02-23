@@ -1,21 +1,43 @@
 [
   {
-    "cname": "实有人口",
+    "cname": "首页",
     "cnameKey": "/home",
     "normalUrl": "/home",
-    "icon": "icon-hot-fill",
+    "icon": ""
+  },
+  {
+    "cname": "模块一",
+    "cnameKey": "/module1",
+    "normalUrl": "/module1",
+    "icon": "",
     "children": [
       {
-        "cname": "菜单一",
-        "cnameKey": "/home/index1",
-        "normalUrl": "/home/index1",
-        "icon": ""
+        "cname": "实有人口",
+        "cnameKey": "/module1/menu1",
+        "normalUrl": "/module1/menu1",
+        "icon": "icon-hot-fill",
+        "children": [
+          {
+            "cname": "菜单一",
+            "cnameKey": "/module1/menu1/moduleMenu1",
+            "normalUrl": "/module1/menu1/moduleMenu1",
+            "icon": "icon-hot-fill"
+          }
+        ]
       },
       {
-        "cname": "菜单二",
-        "cnameKey": "/home/index2",
-        "normalUrl": "/home/index2",
-        "icon": ""
+        "cname": "实有房屋",
+        "cnameKey": "/module1/menu2",
+        "normalUrl": "/module1/menu2",
+        "icon": "icon-hot-fill",
+        "children": [
+          {
+            "cname": "菜单一",
+            "cnameKey": "/module1/menu2/moduleMenu1",
+            "normalUrl": "/module1/menu2/moduleMenu1",
+            "icon": "icon-hot-fill"
+          }
+        ]
       }
     ]
   }
