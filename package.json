@@ -44,13 +44,9 @@
     "vue-template-compiler": "^2.6.11"
   },
   "browserslist": [
-    "last 3 Chrome versions",
-    "last 3 Firefox versions",
-    "Safari >= 10",
-    "Explorer >= 11",
-    "Edge >= 12",
-    "iOS >= 10",
-    "Android >= 6"
+    "> 1%",
+    "last 2 versions",
+    "not dead"
   ],
   "keywords": [
     "子应用模板",
