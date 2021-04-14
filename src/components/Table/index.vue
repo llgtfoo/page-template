@@ -128,7 +128,7 @@ export default {
             },
           }
         },
-        style: { width: `calc(100% - 0px)` },
+        style: { width: `calc(100% - 0px)`,height:'100%'},
         rowSelection: {
           hideDefaultSelections: true,
           onChange: this.onSelectChange,
@@ -203,18 +203,23 @@ export default {
     justify-content: center;
   }
 }
-/deep/.ant-table-body {
-  overflow: auto !important;
-  // overflow-y: auto !important;
+</style>
+<style lang='scss'>
+.s-table .ant-table-hide-scrollbar {
+  overflow-y: auto !important;
 }
-/deep/.ant-table-body-inner {
+.s-table .ant-table-body {
+  overflow: auto !important;
+  /* overflow-y: scroll !important; */
+  height: 1000px;
+  border: 1px solid #f0f0f0;
+  box-sizing: border-box;
+}
+.s-table .ant-table-body-inner {
   overflow: auto !important;
 }
-/deep/.ant-table td,
-/deep/.ant-table th {
+.s-table .ant-table td,
+.s-table .ant-table th {
   white-space: nowrap !important;
 }
-// .ant-table-tbody > tr > td {
-//   white-space: break-spaces;
-// }
 </style>
