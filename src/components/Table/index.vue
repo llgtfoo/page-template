@@ -204,9 +204,6 @@ export default {
 }
 </style>
 <style lang='scss'>
-.s-table .ant-table-hide-scrollbar {
-  overflow-y: auto !important;
-}
 .s-table .ant-table-body {
   overflow: auto !important;
   /* overflow-y: scroll !important; */
@@ -215,7 +212,7 @@ export default {
   box-sizing: border-box;
 }
 .s-table .ant-table-body-inner {
-  overflow: auto !important;
+  overflow-y: auto !important;
 }
 .s-table .ant-table td,
 .s-table .ant-table th {
