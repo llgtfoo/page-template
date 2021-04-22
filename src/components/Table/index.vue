@@ -98,7 +98,7 @@ export default {
             widthTotal :
             this.$refs.STable.getBoundingClientRect().width
         this.scroll = {
-          x,
+          x:x-2,
           y: this.$refs.STable.getBoundingClientRect().height - 65,
         }
       }, 0)
@@ -210,13 +210,13 @@ export default {
 }
 .s-table .ant-table-body {
   overflow: auto !important;
-  /* overflow-y: scroll !important; */
+  overflow-x: scroll !important; 
   height: 1000px;
   border: 1px solid #f0f0f0;
   box-sizing: border-box;
 }
 .s-table .ant-table-body-inner {
-  overflow: auto !important;
+  overflow-y: auto !important;
 }
 .s-table .ant-table td,
 .s-table .ant-table th {
