@@ -155,8 +155,9 @@ export default {
         showSizeChanger: true,
         showQuickJumper: true,
         total: this.total,
-        defaultCurrent: this.currentPage,
-        defaultPageSize: this.pageSize,
+        //defaultCurrent: this.currentPage,
+        //defaultPageSize: this.pageSize,
+        current: this.currentPage,
         pageSize: this.currentPageSize,
         pageSizeOptions: this.pageSizeOptions,
         showTotal: (total) => {
